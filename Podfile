@@ -6,7 +6,6 @@ target 'StripeCheckout' do
   use_frameworks!
 
   # Pods for StripeCheckout
-
   pod 'Alamofire'
   pod 'Stripe'
 

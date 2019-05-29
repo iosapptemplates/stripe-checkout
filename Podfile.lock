@@ -11,6 +11,7 @@ SPEC REPOS:
     - Alamofire
     - Stripe
 
+
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Stripe: 2c4d0a88817361a102886315ff452d90f65e898b
