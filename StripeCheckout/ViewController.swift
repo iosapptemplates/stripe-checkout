@@ -15,22 +15,35 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let checkoutVC = self.checkoutViewController(with: 99.99)
-        self.addChild(checkoutVC)
+        self.addChildViewControllerWithView(checkoutVC)
         checkoutVC.view.frame = self.view.frame
     }
 
     fileprivate func checkoutViewController(with price: Double) -> UIViewController {
-        let stripeSettings = Settings(theme: ATCStripeThemeFactory().stripeTheme(for: uiConfig),
+        let theme = STPTheme()
+        theme.primaryBackgroundColor = UIColor.white
+        theme.secondaryBackgroundColor = UIColor.white
+        theme.primaryForegroundColor = UIColor(hexString: "#333333")
+        theme.secondaryForegroundColor = UIColor(hexString: "#555555")
+        theme.accentColor = UIColor(hexString: "#333333")
+        theme.errorColor = UIColor(red:0.87, green:0.18, blue:0.20, alpha:1.00)
+        theme.font = UIFont.systemFont(ofSize: 17)
+        theme.emphasisFont = UIFont.boldSystemFont(ofSize: 17)
+
+        let stripeSettings = Settings(theme: theme,
                                       additionalPaymentOptions: .all,
                                       requiredBillingAddressFields: .none,
                                       requiredShippingAddressFields: [.emailAddress, .name, .postalAddress], // [.phoneNumber]
             shippingType: .shipping)
 
-        let stripeVC = CheckoutViewController(uiConfig: uiConfig,
-                                              price: Int(price * 100),
+        let stripeVC = CheckoutViewController(price: Int(price * 100),
                                               settings: stripeSettings)
         stripeVC.delegate = self
-        self.navigationController?.pushViewController(stripeVC, animated: true)
+        return stripeVC
     }
 }
 
+extension ViewController: CheckoutViewControllerDelegate {
+    func checkoutViewControllerDidCompleteCheckout(_ vc: CheckoutViewController) {
+    }
+}

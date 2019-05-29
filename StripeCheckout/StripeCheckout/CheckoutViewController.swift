@@ -64,11 +64,9 @@ class CheckoutViewController: UIViewController, STPPaymentContextDelegate {
 
     private var redirectContext: STPRedirectContext?
 
-    let uiConfig: ATCUIGenericConfigurationProtocol
     weak var delegate: CheckoutViewControllerDelegate?
 
-    init(uiConfig: ATCUIGenericConfigurationProtocol,
-         price: Int,
+    init(price: Int,
          settings: Settings) {
 
         let stripePublishableKey = self.stripePublishableKey
@@ -77,7 +75,6 @@ class CheckoutViewController: UIViewController, STPPaymentContextDelegate {
         assert(stripePublishableKey.hasPrefix("pk_"), "You must set your Stripe publishable key at the top of CheckoutViewController.swift to run this app.")
         assert(backendBaseURL != nil, "You must set your backend base url at the top of CheckoutViewController.swift to run this app.")
 
-        self.uiConfig = uiConfig
         self.theme = settings.theme
         MyAPIClient.sharedClient.baseURLString = self.backendBaseURL
 
@@ -127,10 +124,10 @@ class CheckoutViewController: UIViewController, STPPaymentContextDelegate {
                                         theme: settings.theme)
         self.buyButton = UIButton(type: .system)
         buyButton.configure(color: .white,
-                            font: uiConfig.boldFont(size: 16),
+                            font: theme.emphasisFont,
                             cornerRadius: 5,
                             borderColor: nil,
-                            backgroundColor: uiConfig.mainThemeForegroundColor)
+                            backgroundColor: theme.primaryForegroundColor)
         buyButton.setTitle("PLACE ORDER", for: .normal)
 
         self.titleLabel = UILabel(frame: .zero)
@@ -169,8 +166,8 @@ class CheckoutViewController: UIViewController, STPPaymentContextDelegate {
         self.view.addSubview(self.activityIndicator)
 
         self.titleLabel.text = "Check out"
-        self.titleLabel.font = uiConfig.boldFont(size: 34)
-        self.titleLabel.textColor = uiConfig.mainTextColor
+        self.titleLabel.font = UIFont.boldSystemFont(ofSize: 34)
+        self.titleLabel.textColor = theme.secondaryForegroundColor
 
         self.activityIndicator.alpha = 0
         self.buyButton.addTarget(self, action: #selector(didTapBuy), for: .touchUpInside)
@@ -199,7 +196,7 @@ class CheckoutViewController: UIViewController, STPPaymentContextDelegate {
                                         width: width, height: rowHeight)
         self.totalRow.frame = CGRect(x: insets.left, y: self.shippingRow.frame.maxY,
                                      width: width, height: rowHeight)
-        self.buyButton.frame = CGRect(x: insets.left, y: height - 50, width: width - 20, height: 50)
+        self.buyButton.frame = CGRect(x: insets.left, y: height, width: width - 20, height: 50)
         self.buyButton.center = CGPoint(x: width / 2.0, y: self.buyButton.center.y)
         self.activityIndicator.center = self.buyButton.center
     }

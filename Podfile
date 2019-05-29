@@ -7,6 +7,7 @@ target 'StripeCheckout' do
 
   # Pods for StripeCheckout
 
+  pod 'Alamofire'
   pod 'Stripe'
- 
+
 end
