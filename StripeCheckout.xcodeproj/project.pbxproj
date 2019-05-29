@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17614CC3229F3BDE0009E548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17614CC2229F3BDE0009E548 /* AppDelegate.swift */; };
+		17614CC5229F3BDE0009E548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17614CC4229F3BDE0009E548 /* ViewController.swift */; };
+		17614CC8229F3BDE0009E548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17614CC6229F3BDE0009E548 /* Main.storyboard */; };
+		17614CCA229F3BE50009E548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17614CC9229F3BE50009E548 /* Assets.xcassets */; };
+		17614CCD229F3BE50009E548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17614CCB229F3BE50009E548 /* LaunchScreen.storyboard */; };
+		17614CDC229F3C7B0009E548 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17614CD5229F3C7B0009E548 /* CheckoutViewController.swift */; };
+		17614CDD229F3C7B0009E548 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17614CD6229F3C7B0009E548 /* Buttons.swift */; };
+		17614CDE229F3C7B0009E548 /* MyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17614CD7229F3C7B0009E548 /* MyAPIClient.swift */; };
+		17614CDF229F3C7B0009E548 /* ATCStripeThemeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17614CD8229F3C7B0009E548 /* ATCStripeThemeFactory.swift */; };
+		17614CE0229F3C7B0009E548 /* CheckoutRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17614CD9229F3C7B0009E548 /* CheckoutRowView.swift */; };
+		17614CE1229F3C7B0009E548 /* PaymentContextFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17614CDA229F3C7B0009E548 /* PaymentContextFooterView.swift */; };
+		17614CE2229F3C7B0009E548 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17614CDB229F3C7B0009E548 /* SettingsViewController.swift */; };
+		69D1BBCC255621A79D5B99BB /* Pods_StripeCheckout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14CD5551201B1BBBE8ABC8B /* Pods_StripeCheckout.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		011B5C2554929AE7F0C877DE /* Pods-StripeCheckout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripeCheckout.release.xcconfig"; path = "Pods/Target Support Files/Pods-StripeCheckout/Pods-StripeCheckout.release.xcconfig"; sourceTree = "<group>"; };
+		17614CBF229F3BDE0009E548 /* StripeCheckout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StripeCheckout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17614CC2229F3BDE0009E548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17614CC4229F3BDE0009E548 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17614CC7229F3BDE0009E548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17614CC9229F3BE50009E548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17614CCC229F3BE50009E548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17614CCE229F3BE50009E548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17614CD5229F3C7B0009E548 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		17614CD6229F3C7B0009E548 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		17614CD7229F3C7B0009E548 /* MyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAPIClient.swift; sourceTree = "<group>"; };
+		17614CD8229F3C7B0009E548 /* ATCStripeThemeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCStripeThemeFactory.swift; sourceTree = "<group>"; };
+		17614CD9229F3C7B0009E548 /* CheckoutRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutRowView.swift; sourceTree = "<group>"; };
+		17614CDA229F3C7B0009E548 /* PaymentContextFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentContextFooterView.swift; sourceTree = "<group>"; };
+		17614CDB229F3C7B0009E548 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		52FC04F81F6253518689880C /* Pods-StripeCheckout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripeCheckout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StripeCheckout/Pods-StripeCheckout.debug.xcconfig"; sourceTree = "<group>"; };
+		D14CD5551201B1BBBE8ABC8B /* Pods_StripeCheckout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StripeCheckout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17614CBC229F3BDE0009E548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D1BBCC255621A79D5B99BB /* Pods_StripeCheckout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17614CB6229F3BDD0009E548 = {
+			isa = PBXGroup;
+			children = (
+				17614CC1229F3BDE0009E548 /* StripeCheckout */,
+				17614CC0229F3BDE0009E548 /* Products */,
+				1BF1D96086C43E811FA5A0AE /* Pods */,
+				4175544A3BAFD0B75466C6CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		17614CC0229F3BDE0009E548 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17614CBF229F3BDE0009E548 /* StripeCheckout.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17614CC1229F3BDE0009E548 /* StripeCheckout */ = {
+			isa = PBXGroup;
+			children = (
+				17614CD4229F3C7B0009E548 /* StripeCheckout */,
+				17614CC2229F3BDE0009E548 /* AppDelegate.swift */,
+				17614CC4229F3BDE0009E548 /* ViewController.swift */,
+				17614CC6229F3BDE0009E548 /* Main.storyboard */,
+				17614CC9229F3BE50009E548 /* Assets.xcassets */,
+				17614CCB229F3BE50009E548 /* LaunchScreen.storyboard */,
+				17614CCE229F3BE50009E548 /* Info.plist */,
+			);
+			path = StripeCheckout;
+			sourceTree = "<group>";
+		};
+		17614CD4229F3C7B0009E548 /* StripeCheckout */ = {
+			isa = PBXGroup;
+			children = (
+				17614CD5229F3C7B0009E548 /* CheckoutViewController.swift */,
+				17614CD6229F3C7B0009E548 /* Buttons.swift */,
+				17614CD7229F3C7B0009E548 /* MyAPIClient.swift */,
+				17614CD8229F3C7B0009E548 /* ATCStripeThemeFactory.swift */,
+				17614CD9229F3C7B0009E548 /* CheckoutRowView.swift */,
+				17614CDA229F3C7B0009E548 /* PaymentContextFooterView.swift */,
+				17614CDB229F3C7B0009E548 /* SettingsViewController.swift */,
+			);
+			path = StripeCheckout;
+			sourceTree = "<group>";
+		};
+		1BF1D96086C43E811FA5A0AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52FC04F81F6253518689880C /* Pods-StripeCheckout.debug.xcconfig */,
+				011B5C2554929AE7F0C877DE /* Pods-StripeCheckout.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4175544A3BAFD0B75466C6CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D14CD5551201B1BBBE8ABC8B /* Pods_StripeCheckout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17614CBE229F3BDE0009E548 /* StripeCheckout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17614CD1229F3BE60009E548 /* Build configuration list for PBXNativeTarget "StripeCheckout" */;
+			buildPhases = (
+				DB7438DBBAFE5359ED406435 /* [CP] Check Pods Manifest.lock */,
+				17614CBB229F3BDE0009E548 /* Sources */,
+				17614CBC229F3BDE0009E548 /* Frameworks */,
+				17614CBD229F3BDE0009E548 /* Resources */,
+				F340084E2F2390A10630C236 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StripeCheckout;
+			productName = StripeCheckout;
+			productReference = 17614CBF229F3BDE0009E548 /* StripeCheckout.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17614CB7229F3BDD0009E548 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Instamobile;
+				TargetAttributes = {
+					17614CBE229F3BDE0009E548 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 17614CBA229F3BDD0009E548 /* Build configuration list for PBXProject "StripeCheckout" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17614CB6229F3BDD0009E548;
+			productRefGroup = 17614CC0229F3BDE0009E548 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17614CBE229F3BDE0009E548 /* StripeCheckout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17614CBD229F3BDE0009E548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17614CCD229F3BE50009E548 /* LaunchScreen.storyboard in Resources */,
+				17614CCA229F3BE50009E548 /* Assets.xcassets in Resources */,
+				17614CC8229F3BDE0009E548 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DB7438DBBAFE5359ED406435 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StripeCheckout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F340084E2F2390A10630C236 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StripeCheckout/Pods-StripeCheckout-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StripeCheckout/Pods-StripeCheckout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17614CBB229F3BDE0009E548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17614CDF229F3C7B0009E548 /* ATCStripeThemeFactory.swift in Sources */,
+				17614CE0229F3C7B0009E548 /* CheckoutRowView.swift in Sources */,
+				17614CC5229F3BDE0009E548 /* ViewController.swift in Sources */,
+				17614CDC229F3C7B0009E548 /* CheckoutViewController.swift in Sources */,
+				17614CDE229F3C7B0009E548 /* MyAPIClient.swift in Sources */,
+				17614CC3229F3BDE0009E548 /* AppDelegate.swift in Sources */,
+				17614CE1229F3C7B0009E548 /* PaymentContextFooterView.swift in Sources */,
+				17614CDD229F3C7B0009E548 /* Buttons.swift in Sources */,
+				17614CE2229F3C7B0009E548 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17614CC6229F3BDE0009E548 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17614CC7229F3BDE0009E548 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17614CCB229F3BE50009E548 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17614CCC229F3BE50009E548 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17614CCF229F3BE60009E548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17614CD0229F3BE60009E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17614CD2229F3BE60009E548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52FC04F81F6253518689880C /* Pods-StripeCheckout.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JSQ6T9Y6J4;
+				INFOPLIST_FILE = StripeCheckout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.instamobile.StripeCheckout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17614CD3229F3BE60009E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011B5C2554929AE7F0C877DE /* Pods-StripeCheckout.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JSQ6T9Y6J4;
+				INFOPLIST_FILE = StripeCheckout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.instamobile.StripeCheckout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17614CBA229F3BDD0009E548 /* Build configuration list for PBXProject "StripeCheckout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17614CCF229F3BE60009E548 /* Debug */,
+				17614CD0229F3BE60009E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17614CD1229F3BE60009E548 /* Build configuration list for PBXNativeTarget "StripeCheckout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17614CD2229F3BE60009E548 /* Debug */,
+				17614CD3229F3BE60009E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17614CB7229F3BDD0009E548 /* Project object */;
+}
