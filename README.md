@@ -13,11 +13,14 @@ This open-source Swift project is built on top of the custom iOS checkout projec
 </p>
 
 ## Features
+
 <ul>
 	<li>Checkout UI Design Kit</li>
 	<li>Integrated with Stripe</li>
 	<li>Apple Pay Support/li>
-	<li>Modularized code</li>
+	<li>Accepting Credit Cards</li>
+	<li>Shipping Address Picker</li>
+	<li>Modularized Code</li>
 	<li>Great detailed documentation</li>
 </ul>
 
