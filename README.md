@@ -1,6 +1,6 @@
 # Custom Stripe Checkout for iOS in Swift 🚀🚀🔥🔥
 
-This open-source Swift project is built on top of the custom iOS checkout project offered by Stripe. Use this project if you want to accept payments in your native iOS app, via Stripe.
+This open-source Swift project is built on top of the custom iOS checkout project offered by <a href="https://github.com/stripe/stripe-ios/tree/master/Example">Stripe</a>. Use this project if you want to accept payments in your native iOS app, via Stripe.
 
 <center>
 	<a href="https://www.iosapptemplates.com/templates/ios-stripe-checkout-swift">
@@ -17,7 +17,7 @@ This open-source Swift project is built on top of the custom iOS checkout projec
 <ul>
 	<li>Checkout UI Design Kit</li>
 	<li>Integrated with Stripe</li>
-	<li>Apple Pay Support/li>
+	<li>Apple Pay Support</li>
 	<li>Accepting Credit Cards</li>
 	<li>Shipping Address Picker</li>
 	<li>Modularized Code</li>
