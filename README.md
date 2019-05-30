@@ -3,8 +3,8 @@
 This open-source Swift project is built on top of the custom iOS checkout project offered by Stripe. Use this project if you want to accept payments in your native iOS app, via Stripe.
 
 <center>
-	<a href="https://www.iosapptemplates.com/templates/swift-boilerplate-with-firebase">
-		<img src="https://www.iosapptemplates.com/wp-content/uploads/2019/02/Screen-Shot-2019-02-23-at-1.13.19-PM.png" />
+	<a href="https://www.iosapptemplates.com/templates/ios-stripe-checkout-swift">
+		<img src="https://www.iosapptemplates.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-29-at-5.02.57-PM.png" alt="stripe checkout ios"/>
 	</a>
 </center>
 
